@@ -1,10 +1,10 @@
-class Post 
+class Song 
   
-  attr_accessor :title, :author
-  
-  def post_author(author_obj)
-    @author << author_obj 
-    author_obj.post = self 
+   attr_accessor :title, :artist
+   
+   def song_artist(artist_obj)
+    @artist << artist_obj 
+    artist_obj.song = self 
   end
   
 end 
